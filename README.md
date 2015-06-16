@@ -11,7 +11,7 @@ Toolbar with custom search implementation.
 
 1. Fork or clone this repo.
 2. Include on your project.
-3. Use <com.github.rakawestu.searchtoolbar.SearchToolbar> on your layout.
+3. Use '<com.github.rakawestu.searchtoolbar.SearchToolbar> on your layout.'
 4. Customize the layout using your theme style like a normal toolbar.
 5. Implement SearchToolbarInterface for further search implementation.
 
@@ -22,7 +22,7 @@ Toolbar with custom search implementation.
 
 # License
 
-Copyright 2014 rengwuxian
+Copyright 2014 rakawestu
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
