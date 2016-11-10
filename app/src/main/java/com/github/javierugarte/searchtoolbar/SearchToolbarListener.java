@@ -1,8 +1,5 @@
-package com.github.rakawestu.searchtoolbar;
+package com.github.javierugarte.searchtoolbar;
 
-/**
- * @author rakawm
- */
 public interface SearchToolbarListener {
 
     void onSearch(String keyword);

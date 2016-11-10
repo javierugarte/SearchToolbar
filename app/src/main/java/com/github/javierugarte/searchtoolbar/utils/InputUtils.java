@@ -1,13 +1,10 @@
-package com.github.rakawestu.searchtoolbar.utils;
+package com.github.javierugarte.searchtoolbar.utils;
 
 import android.content.Context;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-/**
- * @author rakawm
- */
 public class InputUtils {
 
     public static void hideKeyboard(Context context, View view){

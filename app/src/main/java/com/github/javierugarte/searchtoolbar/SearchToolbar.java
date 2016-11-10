@@ -1,4 +1,4 @@
-package com.github.rakawestu.searchtoolbar;
+package com.github.javierugarte.searchtoolbar;
 
 
 import android.content.Context;
@@ -13,11 +13,9 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.github.rakawestu.searchtoolbar.utils.InputUtils;
+import com.github.javierugarte.searchtoolbar.utils.InputUtils;
 
-/**
- * @author rakawm
- */
+
 public class SearchToolbar extends Toolbar {
 
     private EditText keyword;

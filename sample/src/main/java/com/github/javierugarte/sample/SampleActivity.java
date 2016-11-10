@@ -1,16 +1,14 @@
-package com.github.rakawestu.sample;
+package com.github.javierugarte.sample;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import com.github.rakawestu.searchtoolbar.SearchToolbar;
-import com.github.rakawestu.searchtoolbar.SearchToolbarListener;
+import com.github.javierugarte.searchtoolbar.SearchToolbar;
+import com.github.javierugarte.searchtoolbar.SearchToolbarListener;
 
-/**
- * @author rakawm
- */
-public class SampleActivity extends AppCompatActivity implements SearchToolbarListener{
+
+public class SampleActivity extends AppCompatActivity implements SearchToolbarListener {
 
     TextView text;
 
