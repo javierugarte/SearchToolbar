@@ -5,4 +5,5 @@ public interface SearchToolbarListener {
     void onSearch(String keyword);
 
     void onClear();
+
 }

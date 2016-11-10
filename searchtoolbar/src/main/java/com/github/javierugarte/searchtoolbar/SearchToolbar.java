@@ -11,18 +11,15 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import com.github.javierugarte.searchtoolbar.utils.InputUtils;
-
 
 public class SearchToolbar extends Toolbar {
 
     private EditText keyword;
-    private ImageButton search, clear;
+    private ImageButton clear;
     private SearchToolbarListener listener;
-    private TextView title;
-    private LinearLayout container, containerSearch;
+    private LinearLayout containerSearch;
 
     public SearchToolbar(Context context) {
         super(context);
@@ -43,55 +40,39 @@ public class SearchToolbar extends Toolbar {
         this.listener = listener;
     }
 
-    public void init(){
+    private void init(){
         LayoutInflater.from(getContext()).inflate(R.layout.search_toolbar, this, true);
 
         keyword = (EditText)findViewById(R.id.search_keyword);
-        search = (ImageButton)findViewById(R.id.search_button);
         clear = (ImageButton)findViewById(R.id.reset_button);
-        container = (LinearLayout)findViewById(R.id.container);
         containerSearch = (LinearLayout)findViewById(R.id.container_search);
-        title = (TextView)findViewById(R.id.toolbar_title);
 
-        search.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showSearch();
-            }
-        });
         clear.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 keyword.setText("");
             }
         });
+
+        showSearch();
     }
 
-    private void showSearch(){
+    public void setHint(int hint) {
+        keyword.setHint(hint);
+    }
+
+    public void setHint(CharSequence hint) {
+        keyword.setHint(hint);
+    }
+
+    private void showSearch() {
         containerSearch.setVisibility(VISIBLE);
-        container.setVisibility(GONE);
         keyword.addTextChangedListener(textWatcher);
         keyword.requestFocus();
-        setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
-        setNavigationOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                closeSearch();
-            }
-        });
         InputUtils.showKeyboard(getContext(), keyword);
         if(listener!=null) {
             listener.onSearch(keyword.getText().toString());
         }
-    }
-
-    private void closeSearch(){
-        container.setVisibility(VISIBLE);
-        containerSearch.setVisibility(GONE);
-        keyword.removeTextChangedListener(textWatcher);
-        setNavigationIcon(null);
-        setNavigationOnClickListener(null);
-        InputUtils.hideKeyboard(getContext(), container);
     }
 
     private TextWatcher textWatcher = new TextWatcher() {
@@ -117,9 +98,4 @@ public class SearchToolbar extends Toolbar {
         }
     };
 
-    @Override
-    public void setTitle(CharSequence title) {
-        super.setTitle(title);
-        this.title.setText(title);
-    }
 }
