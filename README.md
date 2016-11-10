@@ -20,9 +20,12 @@ Toolbar with custom search implementation.
 1. Easy theming using app theme.
 2. Integrated filter with recycler view.
 
+#Fork
+Original project: [https://github.com/rakawestu/SearchToolbar](https://github.com/rakawestu/SearchToolbar)
+
 # License
 
-Copyright 2014 rakawestu
+Copyright 2016 Javier
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
