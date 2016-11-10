@@ -1,13 +1,12 @@
 # SearchToolbar
 Simple and easy to use toolbar widget with custom search capability.
 
-![](capture_1.png)
+<img src="https://github.com/javierugarte/SearchToolbar/raw/master/images/capture_1.png" width="350">
 
 # Features
 
 Toolbar with custom search implementation.
 
-**Screenshot to be added**
 
 # How To Use
 ```
@@ -17,7 +16,6 @@ compile 'com.github.javierugarte:searchtoolbar:1.0.0'
 # Future Works
 
 1. Easy theming using app theme.
-2. Integrated filter with recycler view.
 
 #Fork
 Original project: [https://github.com/rakawestu/SearchToolbar](https://github.com/rakawestu/SearchToolbar)
