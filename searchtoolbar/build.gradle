@@ -3,7 +3,7 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 // This is the library version used when deploying the artifact
-version = "1.0.1"
+version = "1.0.2"
 group = "com.github.javierugarte"
 
 def artifact = "searchtoolbar"
@@ -19,7 +19,7 @@ android {
         minSdkVersion 12
         targetSdkVersion 24
         versionCode 1
-        versionName "1.0.0"
+        versionName "1.0.2"
     }
     buildTypes {
         release {
