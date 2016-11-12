@@ -10,7 +10,7 @@ Toolbar with custom search implementation.
 
 # How To Use
 ```
-compile 'com.github.javierugarte:searchtoolbar:1.0.0'
+compile 'com.github.javierugarte:searchtoolbar:1.0.1'
 ```
 
 # Future Works
